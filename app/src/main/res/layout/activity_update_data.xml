@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+
+        <!-- Tombol Back -->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="27dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_back_white"
+            android:paddingStart="-10dp"/>
+
+        <!-- Title di dalam Toolbar -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_data"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Nama Nasabah -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_nasabah"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/etNamaNasabah"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/light_gray"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:hint="@string/nama_hint"/>
+
+            <!-- Header Peringatan -->
+            <LinearLayout
+                android:id="@+id/headerPeringatanUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/peringatan"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/iconTogglePeringatanUpdate"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_expand_more"
+                    android:contentDescription="Toggle" />
+            </LinearLayout>
+
+            <!-- Konten Peringatan -->
+            <LinearLayout
+                android:id="@+id/contentPeringatanUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:padding="8dp"
+                android:background="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerStatusPeringatanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etTanggalPeringatanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pilih_tanggal"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_data"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etUploadDataKeteranganUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_data_teks"
+                    android:background="@color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keterangan"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etKeteranganPeringatanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_keterangan"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Header Surat Peringatan 1 -->
+            <LinearLayout
+                android:id="@+id/headerPeringatan1Update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/surat_peringatan1"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/iconTogglePeringatan1Update"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_expand_more"
+                    android:contentDescription="Toggle" />
+            </LinearLayout>
+
+            <!-- Konten SuratPeringatan1 -->
+            <LinearLayout
+                android:id="@+id/contentPeringatan1Update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:background="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerStatusPeringatan1Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etTanggalPeringatan1Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pilih_tanggal"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_data"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etUploadDataPeringatan1Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_data_teks"
+                    android:background="@color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keterangan"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etKeteranganPeringatan1Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_keterangan"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Header Surat Peringatan 2 -->
+            <LinearLayout
+                android:id="@+id/headerPeringatan2Update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/surat_peringatan2"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/iconTogglePeringatan2Update"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_expand_more"
+                    android:contentDescription="Toggle" />
+            </LinearLayout>
+
+            <!-- Konten SuratPeringatan2 -->
+            <LinearLayout
+                android:id="@+id/contentPeringatan2Update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:background="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerStatusPeringatan2Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etTanggalPeringatan2Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pilih_tanggal"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_data"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etUploadDataPeringatan2Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_data_teks"
+                    android:background="@color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keterangan"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etKeteranganPeringatan2Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_keterangan"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Header Surat Peringatan 3 -->
+            <LinearLayout
+                android:id="@+id/headerPeringatan3Update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/surat_peringatan3"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/iconTogglePeringatan3Update"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_expand_more"
+                    android:contentDescription="Toggle" />
+            </LinearLayout>
+
+            <!-- Konten SuratPeringatan2 -->
+            <LinearLayout
+                android:id="@+id/contentPeringatan3Update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:background="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerStatusPeringatan3Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etTanggalPeringatan3Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pilih_tanggal"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_data"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etUploadDataPeringatan3Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_data_teks"
+                    android:background="@color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keterangan"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etKeteranganPeringatan3Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_keterangan"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Header Surat Panggilan -->
+            <LinearLayout
+                android:id="@+id/headerPenggilanUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/surat_panggilan"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/iconTogglePanggilanUpdate"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_expand_more"
+                    android:contentDescription="Toggle" />
+            </LinearLayout>
+
+            <!-- Konten Surat Panggilan -->
+            <LinearLayout
+                android:id="@+id/contentPanggilanUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:background="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerStatusPanggilanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etTanggalPanggilanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pilih_tanggal"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_data"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etUploadDataPanggilanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_data_teks"
+                    android:background="@color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keterangan"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etKeteranganPanggilanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_keterangan"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+
+            <!-- Header Surat Penyemprotan -->
+            <LinearLayout
+                android:id="@+id/headerPenyemprotaUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/penyemprotan"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/iconTogglePenyemprotanUpdate"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_expand_more"
+                    android:contentDescription="Toggle" />
+            </LinearLayout>
+
+            <!-- Konten Surat Penyemprotan -->
+            <LinearLayout
+                android:id="@+id/contentPenyemprotanUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:background="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerStatusPenyemprotanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etTanggalPenyemprotanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pilih_tanggal"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_data"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etUploadDataPenyemprotanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_data_teks"
+                    android:background="@color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keterangan"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etKeteranganPenyemprotanUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_keterangan"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Header Surat Eksekusi -->
+            <LinearLayout
+                android:id="@+id/headerEksekusiUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/eksekusi"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/iconToggleEksekusiUpdate"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_expand_more"
+                    android:contentDescription="Toggle" />
+            </LinearLayout>
+
+            <!-- Konten Eksekusi -->
+            <LinearLayout
+                android:id="@+id/contentEksekusiUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:background="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerStatusEksekusiUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etTanggalEksekusiUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pilih_tanggal"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_data"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etUploadDataEksekusiUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_data_teks"
+                    android:background="@color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keterangan"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/etKeteranganEksekusiUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/masukkan_keterangan"
+                    android:background="@color/white"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+
+            <!-- Header Realisasi -->
+            <LinearLayout
+                android:id="@+id/headerRealisasiUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/realisasi"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/iconToggleRealisasiUpdate"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_expand_more"
+                    android:contentDescription="Toggle" />
+            </LinearLayout>
+
+            <!-- Konten Realisasi -->
+            <LinearLayout
+                android:id="@+id/contentRealisasiUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:background="@color/light_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/realisasi_1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:tag="realisasi"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_realisasi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/realisasi_2"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi2_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:tag="realisasi_1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_realisasi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:text="@string/realisasi_3"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi3_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_realisasi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:text="@string/realisasi_4"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi4_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_realisasi5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:text="@string/realisasi_5"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi5_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_realisasi6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:text="@string/realisasi_6"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi6_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_realisasi7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:text="@string/realisasi_7"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi7_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_realisasi8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:text="@string/realisasi_8"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi8_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_realisasi9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:text="@string/realisasi_9"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi9_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/text_realisasi10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    android:text="@string/realisasi_10"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/input_realisasi10_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@color/light_gray"
+                    android:hint="@string/realisasi_1_hint"
+                    android:padding="8dp"
+                    android:textSize="14sp" />
+
+                <!-- Tombol Tambah Realisasi -->
+                <LinearLayout
+                    android:id="@+id/tambah_realsisasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/add_realisasi"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/add" />
+
+                    <TextView
+                        android:id="@+id/text_add_realisasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tambah_realisasi"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- Tombol -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="?attr/actionBarSize">
+
+                <Button
+                    android:id="@+id/button_kembali"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/back_btn"
+                    android:backgroundTint="@color/light_gray"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/save_btn"
+                    android:backgroundTint="@color/blue"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

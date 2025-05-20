@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">PengamananKredit</string>
+
+    <string name="auth_text">Masuk atau Daftar</string>
+    <string name="login_text">Sudah punya akun? Masuk sekarang</string>
+    <string name="login">MASUK</string>
+    <string name="register_text">Belum punya akun? Daftar sekarang</string>
+    <string name="register">DAFTAR</string>
+
+    <string name="title_login_page">Silakan masukkan data Anda</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="login_text_start">Belum punya akun?</string>
+    <string name="login_text_end">Daftar sekarang</string>
+
+    <string name="name">Nama Lengkap</string>
+    <string name="register_text_start">Sudah punya akun?</string>
+    <string name="register_text_end">Masuk sekarang</string>
+    <string name="title_activity_bottom_navigation">bottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_data">Data</string>
+    <string name="title_profil">Profil</string>
+
+
+    <string name="name_text">User</string>
+    <string name="setting_text">Pengaturan</string>
+    <string name="change_pass">Ubah Kata Sandi</string>
+    <string name="logout_text">Keluar</string>
+
+    <string name="email_user">melanimelani959@gmail.com</string>
+    <string name="resort">Resort</string>
+    <string name="contoh_resort">Resort 1</string>
+    <string name="ganti_foto">Ganti Foto</string>
+    <string name="save_btn">Simpan</string>
+    <string name="edit_profile">Perbarui Profil</string>
+
+    <string name="version">Versi 1.0 ©2025 PT BPR Rama Ganda</string>
+
+    <string name="id">Id</string>
+    <string name="titik_dua">:</string>
+    <string name="contoh_id">101010101001</string>
+    <string name="nama_debitur">Nama Debitur</string>
+    <string name="contoh_nama">Melani Faliana Putri</string>
+    <string name="no_hp">No HP</string>
+    <string name="contoh_no_hp">0812345678910</string>
+    <string name="no_rekening">No Rekening</string>
+    <string name="contoh_no_rekening">202020202001</string>
+    <string name="alamat">Alamat</string>
+    <string name="contoh_alamat">Jalan Manterena, Kota Bogor</string>
+    <string name="tanggal_realisasi">Tanggal Realisasi</string>
+    <string name="contoh_tanggal_realisasi">22 April 2025</string>
+    <string name="tanggal_jatuh_tempo">Tanggal Jatuh Tempo</string>
+    <string name="contoh_tanggal_jatuh_tempo">25 Mei 2025</string>
+    <string name="plafon">Plafon</string>
+    <string name="contoh_plafon">Rp 25.000.000</string>
+    <string name="jaminan">Jaminan</string>
+    <string name="contoh_jaminan">BPKB Kendaraan</string>
+    <string name="pokok">Pokok</string>
+    <string name="contoh_tunggakan_pokok">Rp 15.000.000</string>
+    <string name="bunga">Bunga</string>
+    <string name="contoh_tunggakan_bunga">Rp 2.000.0000</string>
+    <string name="denda">Denda</string>
+    <string name="contoh_tunggakan_denda">Rp 1.000.000</string>
+    <string name="total_tunggakan">Total Tunggakan</string>
+    <string name="contoh_total_tunggakan">Rp 18.000.000</string>
+    <string name="hari_tunggakan">Hari Tunggakan</string>
+    <string name="contoh_hari_tunggakan">27</string>
+
+
+    <string name="peringatan">Peringatan</string>
+    <string name="status">Status</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+    <string name="upload_data">Upload Data</string>
+    <string name="masukkan_data_teks">Masukkan data...</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="masukkan_keterangan">Masukkan keterangan...</string>
+    <string name="surat_peringatan1">Surat Peringatan I</string>
+    <string name="surat_peringatan2">Surat Peringatan II</string>
+    <string name="surat_peringatan3">Surat Peringatan III</string>
+    <string name="surat_panggilan">Surat Panggilan</string>
+    <string name="penyemprotan">Penyemprotan/Sticker</string>
+    <string name="eksekusi">Eksekusi</string>
+    <string name="realisasi">Realisasi</string>
+    <string name="no_rek">Nomor Rekening</string>
+
+
+    <string name="lihat_selengkapnya">Lihat Selengkapnya</string>
+    <string name="form">Form Data Debitur dan Tunggakan</string>
+
+
+    <string name="realisasi_1">Realisasi 1</string>
+    <string name="realisasi_2">Realisasi 2</string>
+    <string name="realisasi_3">Realisasi 3</string>
+    <string name="realisasi_4">Realisasi 4</string>
+    <string name="realisasi_5">Realisasi 5</string>
+    <string name="realisasi_6">Realisasi 6</string>
+    <string name="realisasi_7">Realisasi 7</string>
+    <string name="realisasi_8">Realisasi 8</string>
+    <string name="realisasi_9">Realisasi 9</string>
+    <string name="realisasi_10">Realisasi 10</string>
+
+
+    <string name="add_data">Tambah Data</string>
+    <string name="foto">Foto</string>
+    <string name="unggah_foto">Unggah Foto</string>
+    <string name="nama_nasabah">Nama Nasabah - Status</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="deskripsi_hint">Masukkan deskripsi...</string>
+    <string name="realisasi_1_hint">Masukkan realisasi...</string>
+    <string name="tambah_realisasi">Tambah Realisasi</string>
+    <string name="tindak_lanjut">Tindak Lanjut 1</string>
+    <string name="catatan">Catatan AO</string>
+    <string name="catatan_remedial">Catatan Remedial</string>
+    <string name="catatan_monitoring">Catatan Monitoring</string>
+    <string name="catatan_legal">Catatan Legal</string>
+    <string name="catatan_hint">Masukkan catatan...</string>
+    <string name="no_rek_hint">Masukkan nomor rekening...</string>
+    <string name="no_ciff">Nomor CIF</string>
+    <string name="no_ciff_hint">Masukkan nomor CIF...</string>
+    <string name="nama_hint">Nama dan status nasabah akan tampil disini...</string>
+    <string name="back_btn">Kembali</string>
+
+
+    <string name="detail_data">Detail</string>
+    <string name="update_data">Perbarui Data</string>
+    <string name="data_form">Data Form Nasabah</string>
+    <string name="data_pemanggilan">Data Pemanggilan</string>
+    <string name="data_nama_nasabah">Data Nama Nasabah</string>
+
+</resources>

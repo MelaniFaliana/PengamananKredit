@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#0534B6</color>
+    <color name="light_gray">#E4E4E4</color>
+    <color name="green">#0EB605</color>
+    <color name="yellow">#FF9800</color>
+    <color name="red">#F34E3F</color>
+    <color name="dark_gray">#858585</color>
+    <color name="middle_gray">#B6B1B1</color>
+
+    <!-- Warna Latar Belakang -->
+    <color name="backgroundDark">#121212</color>
+
+
+    <!-- Warna CardView & RecyclerView -->
+    <color name="cardBackgroundDark">#1E1E1E</color>
+
+    <!-- Warna EditText -->
+    <color name="editTextBackgroundDark">#2C2C2C</color>
+</resources>

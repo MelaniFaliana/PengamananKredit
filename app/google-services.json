@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739332257583",
+    "project_id": "pengamanankredit",
+    "storage_bucket": "pengamanankredit.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739332257583:android:97bd43e74a5b89f57713da",
+        "android_client_info": {
+          "package_name": "com.example.pengamanankredit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyU4SFT2E0vl7_O0Thxwy8xjMAXiCLHsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

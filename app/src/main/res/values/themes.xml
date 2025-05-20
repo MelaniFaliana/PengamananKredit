@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PengamananKredit" parent="Theme.Material3.DayNight">
+        <item name="titleTextColor">@color/white</item>
+        <item name="background">@color/blue</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+    </style>
+
+    <style name="Theme.PengamananKredit.NoActionBar" parent="Theme.Material3.DayNight">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+    </style>
+
+
+    <style name="CustomBottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorStyle">@null</item>
+    </style>
+
+    <style name="Theme.PengamananKredit" parent="Base.Theme.PengamananKredit">
+        <item name="titleTextColor">@color/white</item>
+        <item name="backgroundColor">@color/blue</item>
+    </style>
+
+    <style name="ToolbarBlueTheme" parent="">
+        <item name="backgroundColor">@color/blue</item>
+    </style>
+
+    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+</resources>

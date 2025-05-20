@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PengamananKredit"
+        tools:targetApi="31">
+        <activity
+            android:name=".admin.DataNamaNasabahActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar"/>
+        <activity
+            android:name=".admin.DataPemanggilanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar"/>
+        <activity
+            android:name=".admin.FormDataNasabahActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar"/>
+        <activity
+            android:name=".admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perbaruidata.UpdateDataActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar" />
+        <activity
+            android:name=".tambahdata.DetailDataActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar" />
+        <activity
+            android:name=".tambahdata.AddDataActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar" />
+        <activity
+            android:name=".bottomnav.ui.profil.EditProfilActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar" />
+        <activity
+            android:name=".bottomnav.bottomNavigation"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity
+            android:name=".authentication.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar" />
+        <activity
+            android:name=".authentication.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar" />
+        <activity
+            android:name=".authentication.AuthenticationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PengamananKredit.NoActionBar" />
+    </application>
+
+</manifest>
