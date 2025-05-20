@@ -1,6 +1,7 @@
 **Pengamanan Kredit**
 
 ***Deskripsi***
+
 Aplikasi Pengamanan Kredit merupakan aplikasi berbasis Android yang berguna untuk menyimpan data kredit nasabah PT BPR Rama Ganda.
 
 Aplikasi ini mengimplementasikan:
